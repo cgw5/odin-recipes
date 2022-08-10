@@ -1,0 +1,50 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    height: auto;
+    width: 500px;
+}
+
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ol {
+    list style: none;
+}
+ol li {
+    counter-increment: item;
+}
+ol li::before {
+    content: counter(item);
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;    
+}
+
+
+h1 {
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+h2 {   
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+}
